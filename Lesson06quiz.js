@@ -22,7 +22,7 @@ const Lesson06quiz = () => {
       <View style={[styles.container]}>
         <Image
           source={require('./src/img/travel_time.jpg')}
-          style={{width: '50%', height: '50%', marginTop: 100}}
+          style={[styles.image]}
         />
         <Text style={[styles.titleText]}>Explore The World</Text>
         <Button onPress={() => {}} title="GET STARTED" color="#dc9b59" />
@@ -42,6 +42,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginTop: 20,
     marginBottom: 20,
+  },
+  image: {
+    width: '50%',
+    height: '50%',
+    marginTop: 100,
   },
 });
 
